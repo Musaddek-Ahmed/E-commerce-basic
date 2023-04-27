@@ -1,0 +1,725 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@300&family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Chivo Mono', monospace;
+}
+
+h1 {
+    font-size: 50px;
+    line-height: 64px;
+    color: black;
+}
+
+h4{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+h2{
+    font-size: 30px;
+}
+
+p {
+    background-color: black;
+    font-size: 20px;
+    color: aquamarine;
+    margin: 15px 0 20px 0;
+    
+}
+
+.section-p1 {
+    padding: 40px 80px;
+}
+
+.section-m1 {
+    margin: 40px 0;
+}
+
+button.normal{
+    font-size: 14px;
+    font-weight: 600;
+    padding: 15px 30px;
+    color: black;
+    background-color: rgb(72, 118, 138);
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: 0.2s;
+}
+body {
+    width: 100%;
+}
+
+
+.logo {
+    
+    width: 150px;
+    height: 100px;
+}
+
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 80px;
+    background: rgb(251, 249, 249);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+
+#navbar li{
+    list-style: none;
+    padding: 0 20px;
+}
+
+#navbar li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: black;
+    transition: 0.3s ease;
+}
+#navbar li a:hover,
+#navbar li a.active{
+   color: rgb(100, 97, 97);
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after{
+    content: "";
+    width: 5%;
+    height: 2px;
+    background: rgb(100, 97, 97);
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+
+#mobile {
+    display: none;
+    align-items: center;
+}
+
+#hero {
+    background-image: url("img/hero.jpg");
+    height: 90vh;
+    width: 100%;
+    background-size: cover;
+    background-position: top 25% right 0;
+    padding: 0 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+#hero h4{
+    padding-bottom: 15px;
+}
+
+#hero h1{
+    color: black;
+}
+#hero button{
+    background-image: url("img/shadee.png");
+    background-size: 150px;
+    height: 150px;
+    background-color: transparent;
+    color: rgb(255, 250, 250);
+    border: 0;
+    padding:10px 80px 30px 22px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 17px;
+}
+
+.shipping {
+    width: 90px;
+    height: 90px;
+    margin-bottom: 10px;
+}
+
+#feature {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#feature .fe-box{
+    width: 150px;
+    text-align: center;
+    padding: 25px 10px;
+    box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.03);
+    border: 1px solid rgb(111, 104, 104);
+    border-radius: 4px;
+    margin: 15px 0;
+}
+
+#feature .fe-box:hover {
+    box-shadow: 10px 10px 60px rgba(0, 0, 0, 0.03);
+}
+
+#feature .fe-box h6{
+    display: inline-block;
+    padding: 9px 8px 6px 8px;
+    line-height: 1;
+    border-radius: 4px;
+    color: black;
+    background-color: rgb(99, 171, 204);
+}
+
+#product1 {
+    text-align: center;
+}
+
+#product1 .pro-container{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    flex-wrap: wrap;
+}
+
+.shirt {
+    width: 240px;
+    height: 240px;
+}
+
+#product1 .pro{
+    width: 23%;
+    min-width: 200px;
+    padding: 5px 12px;
+    border: 1px solid rgb(22, 21, 21);
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+    margin: 15px 0;
+    transition: 0.2s ease;
+    position: relative;
+}
+
+#product1 .pro:hover {
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
+}
+#product1 .pro img{
+    border-radius: 20px;
+}
+
+#product1 .pro .des{
+    text-align: start;
+    padding: 10px 0;
+}
+
+#product1 .pro .des span{
+    color: rgb(74, 73, 73);
+    font-size: 12px;
+}
+
+#product1 .pro .des h5{
+    padding-top: 7px;
+    color: black;
+    font-size: 14px;
+}
+#product1 .pro .des i {
+    font-size: 12px;
+    color: rgb(243, 165, 30)
+}
+#product1 .pro .des h4{
+    padding-top: 7px;
+    font-size: 15px;
+    font-weight: 700;
+    color: rgb(7, 87, 225);
+}
+#product1 .pro .cart{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50px;
+    background-color: rgb(192, 213, 213);
+    color: rgb(7, 87, 225);
+    
+    border: 1px solid rgb(194, 185, 185);
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+}
+
+#banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url("img/banner.jpg");
+    width: 100%;
+    height: 30vh;
+    background-size: cover;
+    background-position: center;
+}
+
+#banner h2{
+    color: black;
+    font-size: 30px;
+    padding: 10px 0;
+
+}
+
+#banner h2 span{
+    color: brown;
+}
+
+#banner button:hover {
+    background: rgb(1, 61, 159);
+    color: beige;
+}
+#sm-banner {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#sm-banner .banner-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: center;
+    background-image: url("img/banner6.jpg");
+    min-width: 580px;
+    height: 50vh;
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+    padding: 30px;
+}
+#sm-banner .banner-box2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: center;
+    background-image: url("img/banner7.jpg");
+    min-width: 580px;
+    height: 50vh;
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+    padding: 30px;
+    background-image: url("img/banner7.jpg");
+}
+#sm-banner .banner-box2 h4{
+    color: rgb(204, 99, 99);
+    background-color: white;
+}
+#sm-banner .banner-box2 span{
+    color: rgb(181, 81, 90);
+    font-size: 14px;
+    font-weight: 500;
+    margin: 15px 0 20px 0;
+    background-color: rgb(0, 0, 0);
+    font-weight: 900;
+}
+
+#sm-banner h4 {
+    color: rgb(179, 167, 46);
+    background-color: white;
+    font-size: 22px;
+    font-weight: 700;
+}
+#sm-banner h2 {
+    color: rgb(0, 0, 0);
+    font-size: 28px;
+    font-weight: 1500;
+    margin: 15px 0 20px 0;
+    
+}
+#sm-banner span {
+    color: rgb(221, 182, 53);
+    font-size: 14px;
+    font-weight: 500;
+    margin: 15px 0 20px 0;
+    background-color: rgb(0, 0, 0);
+    font-weight: 900;
+}
+button.white{
+    font-size: 13px;
+    font-weight: 500;
+    padding: 10px 15px;
+    color: black;
+    background-color: transparent;
+    border-radius: 4px;
+    cursor: pointer;
+    border: 1px solid rgb(0, 0, 0);
+    outline: none;
+    transition: 0.2s;
+}
+button.black{
+    font-size: 13px;
+    font-weight: 500;
+    padding: 10px 15px;
+    color: black;
+    background-color: transparent;
+    border-radius: 4px;
+    cursor: pointer;
+    border: 1px solid rgb(0, 0, 0);
+    outline: none;
+    transition: 0.2s;
+}
+#sm-banner .banner-box2:hover button {
+    background-color: rgb(225, 122, 134);
+}
+#sm-banner .banner-box:hover button {
+
+    background-color: rgb(220, 235, 87);
+
+}
+
+#newsletter {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background-image: url("img/Bann.jpg");
+    background-repeat: no-repeat;
+    background-position: 20% 30%;
+    
+    
+}
+
+#newsletter h4 {
+    font-size: 20px;
+    font-weight: 700;
+    color:azure; 
+}
+
+#newsletter p{
+    font-size: 14px;
+    font-weight: 600;
+    color: azure;
+}
+#newsletter p span{
+    
+    color: rgb(205, 116, 61);
+}
+#newsletter .form{
+    display: flex;
+    width: 30%;
+}
+
+#newsletter input {
+    height: 3.125rem;
+    padding: 0 1.25em;
+    font-size: 14px;
+    width: 100%;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    outline: none;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+#newsletter button {
+    background-color: rgb(92, 182, 241);
+    color: azure;
+    padding: 9px 40px;
+    white-space: nowrap;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+
+}
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+footer .col{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+footer h4 {
+    font-size: 14px;
+    padding-bottom: 20px;
+}
+footer p {
+    font-size: 13px;
+    background-color: transparent;
+    color: black; 
+}
+
+footer a{
+    font-size: 13px;
+    text-decoration: none;
+    color: black;
+    margin-bottom: 10px;
+}
+
+footer .follow {
+    margin-top: 20px;
+}
+footer .follow i{
+    color: rgb(83, 89, 84);
+    padding-right: 4px;
+    cursor: pointer;
+}
+
+footer .follow i:hover,
+footer a:hover{
+    color: aquamarine;
+}
+
+footer .copyright{
+    width: 100%;
+    text-align: center;
+}
+
+
+
+
+@media (max-width:399px){
+    #header {
+        
+        padding: 1px 20px;
+    }
+    .logo {
+    width: 129px;
+    height: 68px;       
+    }
+
+    #hero {
+        
+        background-position: top 25% right 0;
+        padding: 0 25px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+    #navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 0;
+        right: -300px;
+        height: 100vh;
+        width: 150px;
+        background-color: rgb(127, 238, 255);
+        box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+        padding: 80px 0 0 10px;
+        transition: 0.3s;
+    }
+    #mobile {
+        display: flex ;
+        align-items: center;
+    }
+
+    #mobile i{
+        color: rgb(30, 88, 139);
+        font-size: 20px;
+        padding-right: 57px;
+        
+    }
+
+    #navbar li {
+        margin-bottom: 25px;
+    }
+
+    #navbar.active{
+        right: 0px;
+    }
+    #hero h4 {
+        padding-bottom: 15px;
+    }
+    #hero h4 {
+        font-size: 15px;
+        
+    }
+    #hero h2 {
+        font-size: 22px;
+    }
+    #hero h1 {
+        font-size: 30px;
+        
+    }
+    
+    #hero p {
+        
+        font-size: 12px;
+       
+    }
+    
+    #hero button {
+        background-size: 134px;
+        height: 126px;
+        border: 0;
+        padding: 10px 52px 30px 22px;
+        font-weight: 700;
+        font-size: 17px;
+    }
+    
+    .section-p1 {
+        padding: 26px 44px;
+    }
+    
+    #product1 h2 {
+        font-size: 20px;
+    }
+    #product1 p {
+        
+        font-size: 15px;
+        
+        margin: 14px 0 24px 0;
+    }
+    
+    .shirt {
+        width: 174px;
+        height: 171px;
+    }
+    
+    #banner {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background-image: url("img/banner.jpg");
+        width: 100%;
+        height: 20vh;
+        background-size: cover;
+        background-position: center;
+    }
+    #banner h2 {
+        color: black;
+        font-size: 10px;
+        padding: 10px 0;
+    }
+    button.normal {
+        font-size: 9px;
+        font-weight: 600;
+        padding: 7px 12px;
+        color: black;
+        background-color: rgb(72, 118, 138);
+        border-radius: 4px;
+        cursor: pointer;
+        border: none;
+        outline: none;
+        transition: 0.2s;
+    }
+    
+    #sm-banner .banner-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        text-align: center;
+        background-image: url("img/banner6.jpg");
+        min-width: 255px;
+        height: 33vh;
+        border-radius: 10px;
+        background-size: cover;
+        background-position: center;
+        padding: 17px;
+    }
+    #sm-banner h4 {
+        color: rgb(179, 167, 46);
+        background-color: white;
+        font-size: 12px;
+        font-weight: 700;
+    }
+    #sm-banner h2 {
+        color: rgb(0, 0, 0);
+        font-size: 18px;
+        font-weight: 1500;
+        margin: 7px 0 0px 0;
+    }
+    #sm-banner span {
+        color: rgb(221, 182, 53);
+        font-size: 11px;
+        font-weight: 500;
+        margin: 8px 0 12px 0;
+        background-color: rgb(0, 0, 0);
+        font-weight: 900;
+    }
+    button.white {
+        font-size: 10px;
+        font-weight: 500;
+        padding: 5px 9px;
+        color: black;
+        background-color: transparent;
+        border-radius: 4px;
+        cursor: pointer;
+        border: 1px solid rgb(0, 0, 0);
+        outline: none;
+        transition: 0.2s;
+    }
+    #sm-banner .banner-box2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        text-align: center;
+        background-image: url("img/banner7.jpg");
+        min-width: 134px;
+        height: 27vh;
+        border-radius: 10px;
+        background-size: cover;
+        background-position: center;
+        padding: 18px;
+        background-image: url("img/banner7.jpg");
+    }
+    button.black {
+        font-size: 10px;
+        font-weight: 500;
+        padding: 7px 11px;
+        color: black;
+        background-color: transparent;
+        border-radius: 4px;
+        cursor: pointer;
+        border: 1px solid rgb(0, 0, 0);
+        outline: none;
+        transition: 0.2s;
+    }
+    #newsletter input {
+        height: 1.875rem;
+        padding: 0 4.25em;
+        font-size: 10px;
+        width: 100%;
+        border: 1px solid transparent;
+        border-radius: 4px;
+        outline: none;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+    #newsletter button {
+        background-color: rgb(92, 182, 241);
+        color: azure;
+        padding: 9px 22px;
+        white-space: nowrap;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+}
+
